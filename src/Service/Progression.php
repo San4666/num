@@ -4,7 +4,7 @@
 namespace Num\Service;
 
 
-use Num\OperationInterface;
+use Num\CalculatorInterface;
 
 /**
  * Class Progression
@@ -12,7 +12,7 @@ use Num\OperationInterface;
 class Progression
 {
     /**
-     * @var OperationInterface
+     * @var CalculatorInterface
      */
     private $operation;
     /**
@@ -22,19 +22,20 @@ class Progression
 
     /**
      * Progression constructor.
-     * @param OperationInterface $operation
+     *
+     * @param CalculatorInterface $operation
      * @param float $argument
      */
-    public function __construct(OperationInterface $operation, float $argument)
+    public function __construct(CalculatorInterface $operation, float $argument)
     {
         $this->operation = $operation;
         $this->argument = $argument;
     }
 
     /**
-     * @return OperationInterface
+     * @return CalculatorInterface
      */
-    public function getOperation() : OperationInterface
+    public function getOperation() : CalculatorInterface
     {
         return $this->operation;
     }

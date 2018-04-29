@@ -1,10 +1,10 @@
 <?php
 
-namespace Num\Operation;
+namespace Num\Calculator;
 
-use Num\OperationInterface;
+use Num\CalculatorInterface;
 
-class Multiply implements OperationInterface
+class Multiply implements CalculatorInterface
 {
     /**
      * @inheritdoc

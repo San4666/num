@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Num\Operation;
+namespace Num\Calculator;
 
 
-use Num\OperationInterface;
+use Num\CalculatorInterface;
 
-class Division implements OperationInterface
+class Division implements CalculatorInterface
 {
     /**
      * @inheritdoc

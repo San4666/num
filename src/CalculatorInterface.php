@@ -2,7 +2,7 @@
 
 namespace Num;
 
-interface OperationInterface
+interface CalculatorInterface
 {
     /**
      * @param float $a
@@ -11,5 +11,4 @@ interface OperationInterface
      * @return float
      */
     function calculate(float $a, float $b): float;
-
 }

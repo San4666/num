@@ -4,7 +4,7 @@ namespace Num\Service;
 
 
 use Num\Exception\Exception;
-use Num\OperationInterface;
+use Num\CalculatorInterface;
 
 /**
  * Class ArgumentFinder
@@ -12,20 +12,20 @@ use Num\OperationInterface;
 class ArgumentFinder
 {
     /**
-     * @var OperationInterface
+     * @var CalculatorInterface
      */
     private $calculate;
     /**
-     * @var OperationInterface
+     * @var CalculatorInterface
      */
     private $operation;
 
     /**
      * ArgumentFinder constructor.
-     * @param OperationInterface $calculate
-     * @param OperationInterface $operation
+     * @param CalculatorInterface $calculate
+     * @param CalculatorInterface $operation
      */
-    public function __construct(OperationInterface $calculate, OperationInterface $operation)
+    public function __construct(CalculatorInterface $calculate, CalculatorInterface $operation)
     {
 
         $this->calculate = $calculate;
@@ -66,9 +66,9 @@ class ArgumentFinder
     }
 
     /**
-     * @return OperationInterface
+     * @return CalculatorInterface
      */
-    public function getOperation(): OperationInterface
+    public function getOperation(): CalculatorInterface
     {
         return $this->operation;
     }

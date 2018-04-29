@@ -2,12 +2,12 @@
 
 namespace Num\Factory;
 
-use Num\Operation\Division;
-use Num\Operation\Minus;
-use Num\Operation\Multiply;
-use Num\Operation\Plus;
-use Num\Operation\Pow;
-use Num\Operation\ReversePow;
+use Num\Calculator\Division;
+use Num\Calculator\Minus;
+use Num\Calculator\Multiply;
+use Num\Calculator\Plus;
+use Num\Calculator\Pow;
+use Num\Calculator\ReversePow;
 use Num\Service\ArgumentFinder;
 
 /**

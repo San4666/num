@@ -1,13 +1,13 @@
 <?php
 
-namespace Num\Operation;
+namespace Num\Calculator;
 
-use Num\OperationInterface;
+use Num\CalculatorInterface;
 
 /**
  * Class Minus
  */
-class Minus implements OperationInterface
+class Minus implements CalculatorInterface
 {
     /**
      * @inheritdoc

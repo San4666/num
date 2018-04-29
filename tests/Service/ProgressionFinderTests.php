@@ -5,10 +5,9 @@ namespace Num\Test\Service;
 
 use Num\Exception\NotFoundProgression;
 use Num\Factory\ProgressionFinderFactory;
-use Num\Operation\Multiply;
-use Num\Operation\Plus;
-use Num\Operation\Pow;
-use Num\OperationInterface;
+use Num\Calculator\Multiply;
+use Num\Calculator\Plus;
+use Num\CalculatorInterface;
 use Num\Service\ProgressionFinder;
 use PHPUnit\Framework\TestCase;
 
@@ -34,7 +33,7 @@ class ProgressionFinderTests extends TestCase
     /**
      * @dataProvider dataFind
      */
-    public function testFind(array $nums, OperationInterface $operation, float $argument)
+    public function testFind(array $nums, CalculatorInterface $operation, float $argument)
     {
         $progression = $this->finder->find($nums);
         $this->assertTrue($progression->getOperation() instanceof $operation);
