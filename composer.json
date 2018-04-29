@@ -1,0 +1,17 @@
+{
+  "name": "bond/num",
+  "require": {
+    "php": "^7.1",
+    "phpunit/phpunit": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Num\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Num\\Test\\": "tests/"
+    }
+  }
+}
