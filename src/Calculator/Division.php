@@ -3,7 +3,7 @@
 
 namespace Num\Calculator;
 
-
+use DivisionByZeroError;
 use Num\CalculatorInterface;
 
 class Division implements CalculatorInterface
@@ -13,6 +13,9 @@ class Division implements CalculatorInterface
      */
     public function calculate(float $a, float $b): float
     {
+        if(0 == $b) {
+            throw new DivisionByZeroError();
+        }
         return $a / $b;
     }
 }

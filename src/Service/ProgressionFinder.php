@@ -33,6 +33,9 @@ class ProgressionFinder
      */
     public function find(array $nums): Progression
     {
+        if (count($nums) <= 2) {
+            throw new NotFoundProgression();
+        }
         foreach ($this->argumentFinder as $finder) {
             $argument = $finder->find($nums);
             if($argument) {

@@ -67,7 +67,10 @@ class ProgressionFinderTests extends TestCase
     public function dataNotFound() : array {
         return [
             [[1,2,3,4,7]],
-            [[2,4,12,100]]
+            [[2,4,12,100]],
+            [[]],
+            [[1,2]],
+            [[2,0,4]]
         ];
     }
 
